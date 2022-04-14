@@ -1,0 +1,192 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Sản phẩm</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="sanpham.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+            *{
+                padding: 0;
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div class="headline">
+                <h3>SHOP ĐÀN GUITAR TRỰC TUYẾN</h3>
+            </div>
+            <div class="giohang">
+                <a onclick="showcart();"><img src="images/cart.png"><span id="countsp">0</span></a>
+            </div>
+            <div id="showcart">
+                <table>
+                    <tr>
+                        <th>STT</th>
+                        <th>Hình</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Đơn giá</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền ($)</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><img src="dan/1.jpg" alt=""></td>
+                        <td>Đàn Guitar Acoustic Yamaha FX310A</td>
+                        <td>5.300.000 VND</td>
+                        <td>1</td>
+                        <td>
+                            <div>5.300.000 VND</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="5">Tổng đơn hàng</th>
+                        <th>
+                            <div>5.300.000 VND</div>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+            <ul class="product">
+                <li>
+                    <div class="item">
+                        <div class="product-top">
+                            <a href="" class="thump">
+                                <img src="dan/1.jpg" alt="">
+                            </a>
+                            <a href="" class="buy">Mua ngay</a>
+                        </div>
+                        <div class="info">
+                            <a href="" class="name">Đàn Guitar Acoustic Yamaha FX310A</a>
+                            <div class="price">5.300.000 VND</div>
+                        </div>
+                        <input type="number" name="soluong" min="1" max="10" value="1">
+                        <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <div class="product-top">
+                            <a href="" class="thump">
+                                <img src="dan/2.jpg" alt="">
+                            </a>
+                            <a href="" class="buy">Mua ngay</a>
+                        </div>
+                        <div class="info">
+                            <a href="" class="name">Đàn Guitar Acoustic Rosen G13SB</a>
+                            <div class="price">2.500.000 VND</div>
+                        </div>
+                        <input type="number" name="soluong" min="1" max="10" value="1">
+                        <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <div class="product-top">
+                            <a href="" class="thump">
+                                <img src="dan/3.jpg" alt="">
+                            </a>
+                            <a href="" class="buy">Mua ngay</a>
+                        </div>
+                        <div class="info">
+                            <a href="" class="name">Đàn Guitar Acoustic Poshman S30 Mini</a>
+                            <div class="price">3.000.000 VND</div>
+                        </div>
+                        <input type="number" name="soluong" min="1" max="10" value="1">
+                        <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <div class="product-top">
+                            <a href="" class="thump">
+                                <img src="dan/4.jpg" alt="">
+                            </a>
+                            <a href="" class="buy">Mua ngay</a>
+                        </div>
+                        <div class="info">
+                            <a href="" class="name">Đàn Guitar Acoustic Poshman N09AC</a>
+                            <div class="price">1.800.000 VND</div>
+                        </div>
+                        <input type="number" name="soluong" min="1" max="10" value="1">
+                        <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <div class="product-top">
+                            <a href="" class="thump">
+                                <img src="dan/5.jpg" alt="">
+                            </a>
+                            <a href="" class="buy">Mua ngay</a>
+                        </div>
+                        <div class="info" >
+                            <a href="" class="name">Đàn Guitar Acoustic Ba Đờn Taylor T350</a>
+                            <div class="price">3.700.000 VND</div>
+                        </div>
+                        <input type="number" name="soluong" min="1" max="10" value="1">
+                        <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <div class="product-top">
+                            <a href="" class="thump">
+                                <img src="dan/6.jpg" alt="">
+                            </a>
+                            <a href="" class="buy">Mua ngay</a>
+                        </div>
+                        <div class="info">
+                            <a href="" class="name">Đàn Guitar Acoustic Morrison MGW 405BK</a>
+                            <div class="price">1.800.000 VND</div>
+                        </div>
+                        <input type="number" name="soluong" min="1" max="10" value="1">
+                        <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <div class="product-top">
+                            <a href="" class="thump">
+                                <img src="dan/7.jpg" alt="">
+                            </a>
+                            <a href="" class="buy">Mua ngay</a>
+                        </div>
+                        <div class="info">
+                            <a href="" class="name">Đàn Guitar Acoustic Epiphone DR - 100 Natural</a>
+                            <div class="price">3.500.000 VND</div>
+                        </div>
+                        <input type="number" name="soluong" min="1" max="10" value="1">
+                        <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <div class="product-top">
+                            <a href="" class="thump">
+                                <img src="dan/8.png" alt="">
+                            </a>
+                            <a href="" class="buy">Mua ngay</a>
+                        </div>
+                        <div class="info">
+                            <a href="" class="name">Đàn Guitar Acoustic LuthierV T75</a>
+                            <div class="price">1.200.000 VND</div>
+                        </div>
+                        <input type="number" name="soluong" min="1" max="10" value="1">
+                        <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <script>
+            function themvaogiohang(x){
+                var boxsp = x.parentElenment.children;
+                var hinh = boxsp[0].children[0].src;
+                var gia = boxsp[1].children.innerText;
+                var tensp = box 
+            }
+        </script>
+    </body>
+</html>

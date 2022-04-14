@@ -1,0 +1,125 @@
+<html>
+
+<head>
+    <title>PS25013-Trần Minh Quân</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="with=device-with,initial-scale=1.0">
+    <meta http-equiv="x-UA-compatible" content="ie=edge">
+    <link href="gpt.css" rel="stylesheet" />
+
+    <script>
+        function choso() {
+            var a = Math.round(Math.random() * 10);
+            var b = Math.round(Math.random() * 10);
+            var c = Math.round(Math.random() * 10);
+            document.getElementById("a").value = a;
+            document.getElementById("b").value = b;
+            document.getElementById("c").value = c;
+            var btn = document.getElementById("btngiai");
+            btn.disabled = false;
+            btn.className = 'nut';
+        }
+    </script>
+    <script>
+        var ptb2 = {
+            giai: function () {
+                var a = document.getElementById("a").value;
+                var b = document.getElementById("b").value;
+                var c = document.getElementById("c").value;
+                if (a == 0) {
+                    if (b == 0) {
+                        if (c == 0) {
+                            document.getElementById("kq").innerHTML = "<p>Vô Số Nghiệm</P>";
+                        } else {
+                            document.getElementById("kq").innerHTML = "<p>Vô Nghiệm</P>";
+
+                        }
+                    }
+                    else {
+                        var x = -c / b;
+                        str = `<p>Phương trình có nghiệm kép: ${x.toFixed(2)}</p>`;
+                        document.getElementById("kq").innerHTML = str;
+                    }
+
+                } else {
+                        
+                    var delta = b * b - 4 * a * c;
+                    if (delta < 0) {
+                        document.getElementById("kq").innerHTML = "<p>Vô Nghiệm</P>";
+
+                    }
+                    else if (delta == 0) {
+                        var x = -b / (2 * a);
+                        str = `<p> Phương trình có nghiệm kép:  x= ${x.toFixed(2)}</p>`;
+                        document.getElementById("kq").innerHTML = str;
+                    } else {
+                        var x1 = (-b - Math.sqrt(delta)) / (2 * a);
+                        var x2 = (-b + Math.sqrt(delta)) / (2 * a);
+                        var tong=x1+x2;
+                        var tich=x1*x2;
+                        var str = `<p> Phương Trình Có 2 Nghiệm Phân Biệt</p>
+                        <p>x<sub>1</sub> =${x1.toFixed(2)}</p>
+                        <p>x<sub>2</sub> =${x2.toFixed(2)}</p>
+                        <p>Tổng hai nghiệm(-b/a)=${tong.toFixed(2)}</p>
+                        <p>Tích hai nghiệm(c/a)=${tich.toFixed(2)}</p> `;
+
+                        document.getElementById("kq").innerHTML = str;
+
+
+                    }
+
+                }
+                btn = document.getElementById("btngiai");
+btn.className = "nut_khoa";
+                btn.disabled = true;
+            }
+        }
+    </script>
+    <script>
+        var solangiai = 0;
+        function dem() {
+            solangiai++;
+            document.getElementById("solangiai").innerHTML = solangiai;
+        }
+    </script>
+    <script>
+        function tg() {
+            var d = new Date();
+            var nam = d.getFullYear();
+            var thang = d.getMonth()+1 ;
+            var ngay = d.getDate();
+            var gio = d.getHours();
+            var phut = d.getMinutes();
+            var giay = d.getSeconds();
+            var str = ` Bây giờ là ${ngay}/${thang}/${nam} ${gio}:${phut}:${giay}`;
+            document.getElementById("dongho").innerHTML = str;
+        }
+        setInterval("tg()", 1000);
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h3> PHƯƠNG TRÌNH BẬC 2: ax <sup>2</sup> + bx + c = 0</h3>
+
+        <span>Số lần giải: <b id="solangiai"></b></span>
+        <br>
+        <hr>
+        <form>
+            <p><label>Nhâp số a:</label> <input type="text" id="a"></p>
+            <p><label>Nhâp số b:</label> <input type="text" id="b"></p>
+            <p><label>Nhâp số c:</label> <input type="text" id="c"></p>
+            <button type="button" class="nut_khoa" id="btngiai" disabled onclick="ptb2.giai();dem()">Giải Phương Trình</button>
+            <button type="button" class="nut" id="btnchoso" onclick="choso()"> Cho Số</button>
+        </form>
+        <div id="kq">
+
+        </div>
+        <div id="dongho">
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+body {
+    background-color: rgb(231, 229, 230);
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+h3{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: deeppink;
+}
+
+.container {
+    width: 500px;
+    margin: auto;
+    background-color: #F4B928;
+    color: aliceblue;
+    font-size: 22px;
+    text-align: center;
+    border: 2px solid rgb(75, 73, 73);
+    border-radius: 15px;
+    margin-top: 40px;
+}
+form input[id]{
+    margin-top: 20px;
+    width: 200px;
+    text-align: center;
+    padding: 6px 0px;
+    border: 1px solid black;
+    background-color: #F4F0E7;
+    margin-left: 25px;
+    border-radius: 10px;
+}
+form button{
+    width: 120px;
+    height: 40px;
+}
+span{
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+.nut{
+    margin-top: 20px;
+    background-color: #986E09;
+    color: aliceblue;
+    border-radius: 10px;
+    margin-left: 50px;
+}
+.nut_khoa{
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: #986E09;
+    color: aliceblue;
+    
+}
+#solangiai{
+    margin-top: 10px;
+    color: blue;
+    
+
+}
+#kq{
+   
+    margin: 30px 50px 0px 50px;
+    height: 230px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: #FCDD91;
+    color: gray;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+}
+#dongho{
+    margin-top: 20px;
+    color: rgb(250, 68, 68);
+    font-style: italic;
+    margin-bottom: 20px;
+}
